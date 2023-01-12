@@ -8,7 +8,7 @@ body{
     position: relative;
     background-image: url("./resources/images/YOWDA_artistic_image_of_a_house_with_transparent_background_4594bcf9-42c3-44fd-b350-14a38d2e9e0f.png");
     background-repeat: no-repeat;
-    height: 1000px;
+    /* height: 1000px; */
     z-index: -100;
 }
 
@@ -23,9 +23,9 @@ body{
 #title{
     position: absolute;
     padding-left: 200px;
-    top: 70px;
+    top: 40px;
     height: 200px;
-    width: 100%;
+    /* width: 100%; */
     /* background-color: rgba(184, 184, 182, 0.63); */
     z-index: -12;
 }
@@ -35,4 +35,20 @@ body{
 }
 #title > h2{
     color: rgba(10, 41, 0, 0.74);
+}
+#nav{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+#nav2{
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    width: 80%;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px -8px rgb(173, 173, 173);
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    
 }
