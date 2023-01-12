@@ -1,19 +1,38 @@
 body{
-    background-color: rgb(243, 238, 218);
+    background-color: rgb(238, 235, 224);
     box-sizing: border-box;
     margin: 0;
     font-family: monospace;
 }
 #homeImage{
     position: relative;
-    background-image: url("./resources/images/YOWDA_artistic_image_of_a_house_with_transparent_background_4594bcf9-42c3-44fd-b350-14a38d2e9e0f-removebg.png");
+    background-image: url("./resources/images/YOWDA_artistic_image_of_a_house_with_transparent_background_4594bcf9-42c3-44fd-b350-14a38d2e9e0f.png");
     background-repeat: no-repeat;
     height: 1000px;
+    z-index: -100;
+}
+
+#image2{
+    /* background-image: url("./resources/images/YOWDA_artistic_image_of_a_house_with_transparent_background_4594bcf9-42c3-44fd-b350-14a38d2e9e0f-removebg.png"); */
+    background-repeat: no-repeat;
+    height: 1000px;
+    position: relative;
+    z-index: -10;
 }
 
 #title{
-    padding: 100px 200px;
+    position: absolute;
+    padding-left: 200px;
+    top: 70px;
+    height: 200px;
+    width: 100%;
+    /* background-color: rgba(184, 184, 182, 0.63); */
+    z-index: -12;
 }
-#title >*{
+#title > h1{
     font-size: 50px;
+    margin-bottom: -12px;
+}
+#title > h2{
+    color: rgba(10, 41, 0, 0.74);
 }
