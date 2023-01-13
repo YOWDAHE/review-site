@@ -12,14 +12,15 @@ a{
     position: relative;
     background-image: url("./resources/images/YOWDA_artistic_image_of_a_house_with_transparent_background_4594bcf9-42c3-44fd-b350-14a38d2e9e0f.png");
     background-repeat: no-repeat;
+    height: 900px;
     /* background-size: contain; */
 }
 
 #image2{
     /* background-image: url("./resources/images/YOWDA_artistic_image_of_a_house_with_transparent_background_4594bcf9-42c3-44fd-b350-14a38d2e9e0f-removebg.png"); */
-    background-repeat: no-repeat;
-    height: 1000px;
-    position: relative;
+    /* background-repeat: no-repeat; */
+    /* height: 1000px;
+    position: relative; */
 }
 
 #title{
