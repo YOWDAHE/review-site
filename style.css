@@ -3,7 +3,7 @@ body{
     padding: 0px;
     box-sizing: border-box;
 
-    background-color: #B4B4B4;
+    background-color: #8b8b8b;
 }
 
 .header{
@@ -26,7 +26,10 @@ body{
 
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
+nav{
+    position: sticky;
+    top: 0;
+}
 .topNav{
     height: 50px;
     background: #272727;
@@ -97,18 +100,14 @@ body{
     width: 307px;
     height: 213px;
     background: #262626;
-    box-shadow: 16px 17px 18px -6px rgba(0, 0, 0, 0.52);
+    box-shadow: 16px 17px 18px -6px rgba(0, 0, 0, 0.52), inset 0px 0px 30px 21px rgba(0, 0, 0, 0.192);
     border-radius: 25px;
 }
 .top-picks1{
     width: 436px;
     height: 213px;
-    /* left: 84px;
-    top: 146px; */
-
     background: #262626;
-    border: 0.5px solid #000000;
-    box-shadow: 16px 17px 18px -6px rgba(0, 0, 0, 0.52);
+    box-shadow: 16px 17px 18px -6px rgba(0, 0, 0, 0.52), inset 0px 0px 30px 21px rgba(0, 0, 0, 0.192);
     border-radius: 25px;
 }
 .rows-main{
@@ -122,6 +121,6 @@ body{
     height: 137px;
     margin: 0px 15px 15px 0px;
     background: #262626;
-    box-shadow: 16px 17px 18px -6px rgba(0, 0, 0, 0.52);
+    box-shadow: 16px 17px 18px -6px rgba(0, 0, 0, 0.52), inset 0px 0px 30px 21px rgba(0, 0, 0, 0.116);
     border-radius: 25px;
 }
