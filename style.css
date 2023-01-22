@@ -3,7 +3,11 @@ body{
     padding: 0px;
     box-sizing: border-box;
 
-    background-color: #8b8b8b;
+    background-color: #db89896e;
+    /* background-color: #222222; */
+    /* background-image: url(resources/images/wallhaven-5wjwy3.jpg); */
+    /* background-blend-mode: soft-light; */
+    background-attachment: fixed;
 }
 
 .header{
