@@ -1,0 +1,179 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    background-color: #db89896e;
+    /* background-attachment: fixed; */
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    text-align: center;
+
+    font-family:'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    /* identical to box height */
+    letter-spacing: 1.36em;
+
+    color: #000000;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+nav{
+    position: sticky;
+    top: 0;
+}
+.topNav{
+    height: 50px;
+    background: #272727;
+    box-shadow: 0px 11px 34px 5px rgba(0, 0, 0, 0.795);
+    /* position: relative; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-srch{
+    display: flex;
+    align-items: center;
+}
+.icon > img{
+    /* top: 5px;
+    left: 25px; */
+    /* position: absolute; */
+    padding: 5px 0px 0px 25px;
+    height: 80%;
+    justify-self: start;
+}
+.search-top{
+    margin-left: 30px;
+}
+.search-top > input{
+    background: #D9D9D9;
+    box-shadow: inset 9px 9px 8px rgba(0, 0, 0, 0.47);
+    border: none;
+    border-radius: 11px;
+}
+.links{
+    color: rgba(255, 255, 255, 0.712);
+    margin-right: 85px;
+}
+.links > *{
+    margin: 0px 10px;
+}
+.links a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.781);
+}
+.links > .user-top{
+    display: inline-block;
+    border: none;
+    text-align: center;
+    color: #000000;
+    width: 60px;
+    background: #45E2BD;
+    border-radius: 48px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.pictures{
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    z-index: -1;
+}
+.pictures > *{
+    margin: 0px 15px;
+}
+.main-picture{
+    width: 227px;
+    height: 222px;
+
+    background: url(./resources/images/sun.jfif);
+    background-size:cover;
+    background-position: center;
+    box-shadow: 16px 17px 18px -6px rgba(0, 0, 0, 0.767);
+    border-radius: 25px;
+}
+.second-picture{
+    width: 857px;
+    height: 222px;
+    background: url(./resources/images/2\ peple.jpg);
+    background-size: cover;
+    background-position: 0px;
+    box-shadow: 16px 17px 18px -6px rgba(0, 0, 0, 0.767);
+    border-radius: 25px;
+}
+
+.back{
+    width: 1004px;
+    height: 550px;
+    position: absolute;
+    top: 100px;
+    z-index: -2;
+    background: #262626;
+    box-shadow: 16px 17px 18px -6px rgba(0, 0, 0, 0.52);
+    border-radius: 25px;
+}
+
+.back-main{
+    padding: 200px 45px 0px 45px;
+    /* background-color: white; */
+    display: flex;
+}
+
+.info-back{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.info-back > h4{
+    /* margin-left: -17px; */
+    background: #141414;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 6px 7px 8px -6px rgba(0, 0, 0, 0.466);
+    border-radius: 25px;
+}
+.info-back > section{
+    /* background: #073d2d; */
+    padding: 10px;
+    text-align: center;
+    box-shadow: 10px 10px 8px -6px rgba(0, 0, 0, 0.466);
+    border-radius: 25px;
+    margin-bottom: 10px;
+}
+.hover-parent{
+    position: relative;
+}
+.hover{
+    position: absolute;
+    top: 0;
+    right: -20px;
+    font-size: .75em;
+    background: #031d15;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 6px 7px 8px -6px rgba(0, 0, 0, 0.466);
+    border-radius: 15px;
+    
+    /* margin-bottom: 15px; */
+}
+
+.about-back{
+    margin-left: 50px;
+}
+.about-back  textarea{
+    background-color: #000000a1;
+    border: none;
+    box-shadow: 7px 7px 8px -2px black;
+}
