@@ -46,6 +46,10 @@ nav{
 .topNav > .links{
     z-index: 100;
 }
+.topNav > .links >a:hover{
+    color: white;
+    filter: blur(.5px);
+}
 .logo-srch{
     display: flex;
     align-items: center;
