@@ -5,7 +5,8 @@ body{
     height: 100%;
     width: 100%;
 
-    background-color: #db89896e;
+    /* background-color: #db89896e; */
+    background-color: rgba(0, 0, 0, 0.904);
     /* display: flex;
     flex-direction: column; */
     overflow: hidden;
@@ -22,13 +23,14 @@ body{
     /* identical to box height */
     letter-spacing: 1.36em;
 
-    color: #000000;
+    color: #e4e4e4;
 
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 nav{
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 .topNav{
     height: 50px;
@@ -38,7 +40,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    z-index: 1;
 }
 
 .topNav > .links{
@@ -100,7 +102,7 @@ main{
     width: 100%;
     position: relative;
     margin-top: 20px;
-    z-index: -1;
+    /* z-index: -1; */
     /* justify-content: space-evenly; */
     /* padding: 10px; */
     /* background-color: rgb(98, 0, 255); */
@@ -110,7 +112,7 @@ main{
     /* flex: .5; */
     /* height: 100%; */
     position: sticky;
-    top: 0;
+    top: 80px;
     margin-left: 10px;
     padding: 15px 5px;
     width: 40%;
@@ -122,11 +124,15 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* z-index: 200; */
 }
 .picture-left{
     width: 90%;
     height: 200px;
     background-color: red;
+    background-image: url(./resources/images/sun.jfif);
+    background-size: cover;
+    background-position: center;
     box-shadow: 16px 17px 18px -6px rgba(0, 0, 0, 0.52);
     border-radius: 25px;
 }
@@ -160,6 +166,7 @@ main{
     margin-bottom: 7px;
     background-color: rgb(22, 22, 22);
     width: 100%;
+    transition: .2s;
 }
 
 .content > a:hover{
@@ -167,6 +174,9 @@ main{
     border: 0px solid white;
     border-width: 0px 1px 0px 1px;
     padding-left: 30px;
+}
+.important > div{
+    background: #111111;    
 }
 .right-side-main > div{
     background: #262626;
@@ -183,6 +193,23 @@ main{
 .right-side-main >div >div{
     padding: 15px 30px;
 }
-.important{
-
+.circle-add{
+    height: 40px;
+    width: 40px;
+    background-color: rgba(69, 71, 70, 0.836);
+    position: fixed;
+    bottom: 50px;
+    right: 60px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 18px 6px rgba(0, 0, 0, 0.842);
+    font-size: 22px;
+    transition: .15s;
+}
+.circle-add:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 18px -6px rgba(223, 221, 221, 0.842);
+    background-color: rgb(160, 160, 160);
 }
