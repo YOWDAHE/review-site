@@ -8,8 +8,8 @@ body{
     background-color: #db89896e;
     /* display: flex;
     flex-direction: column; */
-    /* overflow: hidden;
-    overflow-y: scroll; */
+    overflow: hidden;
+    overflow-y: scroll;
 }
 .header{
     text-align: center;
@@ -98,7 +98,7 @@ main{
     height: 100%;
     width: 100%;
     position: relative;
-    
+    margin-top: 20px;
     /* justify-content: space-evenly; */
     /* padding: 10px; */
     /* background-color: rgb(98, 0, 255); */
@@ -127,19 +127,14 @@ main{
     border-radius: 25px;
 }
 .right-side-main{
-    /* flex: 2; */
-    margin-left: 30px;
-    width: 70%;
-    height: 300px;
-    background: #262626;
-    box-shadow: 16px 17px 18px -6px rgba(0, 0, 0, 0.52);
-    border-radius: 25px;
+    margin: 0px 25px;
+    margin-top: 35px;
 }
 
 .right-side-main > div {
-    padding: 15px;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 .content{
     width: 100%;
@@ -169,4 +164,20 @@ main{
     border-width: 0px 1px 0px 1px;
     padding-left: 30px;
 }
+.right-side-main > div{
+    background: #262626;
+    box-shadow: 16px 17px 18px -6px rgba(0, 0, 0, 0.52);
+    border-radius: 25px;
+    color: rgb(180, 180, 180);    
+}
+.right-side-main > div >div:first-child{
+    background: #383838;
+    height: 100%;
+    width: 100%;
+}
+.right-side-main >div >div{
+    padding: 15px 30px;
+}
+.important{
 
+}
