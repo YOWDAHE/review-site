@@ -12,6 +12,7 @@ body{
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 .header{
@@ -194,14 +195,20 @@ nav{
     display: none;
 }
 .burger, .btn-berger{
+    background-color: transparent;
+    margin-right: 20px;
+    order: 3;
+    border: none;
+    width: 20px;
     display: none;
 }
 .chk{
     position: absolute;
-    right: 3px;
+    right: 10px;
     top: -5px;
     width: 20px;
     height: 50px;
+    display: none;
 }
 /* .abs{
     position: absolute;
@@ -231,24 +238,48 @@ nav{
         display: none;
     }
     .links{
-        /* position: absolute;
-        right: 0px;
+        position: absolute;
+        top: -150px;
+        right: -100px;
         align-items: flex-end;
-        display: flex; */
-        /* flex-direction: column; */
-        /* margin-top: 130px; */
+        display: flex;
+        flex-direction: column;
+        margin-top: 200px;
         margin-right: 5px;
-        display: none;
+        background-color: rgba(0, 0, 0, 0.774);
+        padding: 20px 10px;
+        /* box-sizing: border-box; */
+        /* display: none; */
     }
-    .user-top{
-        background-color: inherit;
-        text-decoration: none;
-        color: inherit;
-        width: inherit;
-        padding-left: -2px;
+    .links > a {
+        box-sizing: border-box;
+        padding: 10px;
+        margin: 5px 0px;
+        text-align: center;
+        padding-right: 10px;
+        width: 100%;
     }
-    .btn-berger{
+    .links > a:hover{
+        background-color: rgb(49, 49, 49);
+        border: solid 1px rgb(219, 219, 219);
+        border-width: 0px 1px;
+    }
+    .links >.user-top{
+        background-color: transparent;
+        width: 100%;
+        text-align: center;
+        border-radius: 0;
+        color: white;
+    }
+    .btn-berger, .burger{
         display: inline-block;
+    }
+    .chk{
+        display: inline-block;
+        opacity: 0;
+    }
+    .chk:checked ~ .links{
+        right: -10px;
     }
     .top-row-main, .rows-main{
         width: 100%;
@@ -263,5 +294,11 @@ nav{
         background: #262626;
         box-shadow: 16px 17px 18px -6px rgba(0, 0, 0, 0.52), inset 0px 0px 30px 21px rgba(0, 0, 0, 0.192);
         border-radius: 0px;
+    }
+    .rows-main > div >div:first-child{
+        display: none;
+    }
+    .rows-main > div >div:nth-child(2) > p{
+        padding: 0px 5px;
     }
 }

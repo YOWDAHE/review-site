@@ -214,6 +214,10 @@ main{
 }
 .circle-add:hover{
     cursor: pointer;
-    box-shadow: 0px 0px 18px -6px rgba(223, 221, 221, 0.842);
-    background-color: rgb(160, 160, 160);
+    /* box-shadow: 0px 0px 18px -6px rgba(223, 221, 221, 0.842); */
+    box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.842);
+    background-color: rgba(110, 110, 110, 0.808);
+    height: 42px;
+    width: 42px;
+    border-radius: 30px;
 }
