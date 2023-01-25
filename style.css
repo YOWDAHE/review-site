@@ -42,6 +42,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 2;
 }
 .logo-srch{
     display: flex;
@@ -68,7 +69,7 @@ nav{
 .filter > select{
     text-align: center;
     width: 130px;
-    background: #45E2BD;
+    background: #434444;
     border-radius: 48px;
 
 }
@@ -111,9 +112,16 @@ nav{
     overflow: hidden;
 
 }
+.top-row-main > div:nth-child(1) > div:nth-child(1){
+    box-shadow: inset 0px 0px 20px 10px black;
+    background-color: #000000;
+    background-image: url(./resources/images/blue\ place.png);
+    background-size: cover;
+    background-position: center;
+}
 
 .top-picks1{
-    position: relative;
+    /* position: relative; */
     width: 436px;
     height: 213px;
     background: #262626;
@@ -121,7 +129,7 @@ nav{
     border-radius: 25px;
     display: flex;
     overflow: hidden;
-    z-index: -1;
+    /* z-index: -1; */
 }
 .rows-main{
     display: flex;
@@ -130,6 +138,7 @@ nav{
     margin-top: 15px;
 }
 .rows-main > *{
+    transition: box-shadow 200ms ease-out;
     width: 276px;
     height: 137px;
     margin: 0px 15px 15px 0px;
@@ -139,7 +148,50 @@ nav{
     display: flex;
     overflow: hidden;
 }
-.rows-main > div >*{
+/* .rows-main > *:active{
+    background-color: black;
+} */
+/* sample */
+
+.rows-main > button:nth-child(1) > div:nth-child(1){
+    box-shadow: inset 0px 0px 20px 10px black;
+    background-color: #000000;
+    background-image: url(./resources/images/sun.jfif);
+    background-size: cover;
+    background-position: center;
+}
+.rows-main > button:nth-child(2) > div:nth-child(1){
+    box-shadow: inset 0px 0px 20px 10px black;
+    background-color: #000000;
+    background-image: url(./resources/images/wallhaven-6oz76x.png);
+    background-size: cover;
+    background-position: center;
+}
+.rows-main > button:nth-child(3) > div:nth-child(1){
+    box-shadow: inset 0px 0px 20px 10px black;
+    background-color: #000000;
+    background-image: url(./resources/images/2\ peple.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.rows-main > button:nth-child(4) > div:nth-child(1){
+    box-shadow: inset 0px 0px 20px 10px black;
+    background-color: #000000;
+    background-image: url(./resources/images/sun.jfif);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* sample end */
+
+
+.rows-main > button:hover, .top-row-main > div:hover{
+   cursor: pointer; 
+   outline: solid 2px rgba(255, 255, 255, 0.61);
+   box-shadow: 0px 0px 40px -5px rgba(226, 223, 223, 0.349), inset 0px 0px 30px 21px rgba(0, 0, 0, 0.116);
+}
+.rows-main > button >*{
     flex: 1;
 }
 .image-toppick{
@@ -184,7 +236,7 @@ nav{
     margin-top: 5px;
 }
 .sample-caffe > p, .sample-caffe2 > p{
-    padding-left: 20px;
+    padding-left: 5px;
     color: rgba(255, 255, 255, 0.568);
     flex: 2;
 }
@@ -297,10 +349,10 @@ nav{
         box-shadow: 16px 17px 18px -6px rgba(0, 0, 0, 0.52), inset 0px 0px 30px 21px rgba(0, 0, 0, 0.192);
         border-radius: 0px;
     }
-    .rows-main > div >div:first-child{
+    .rows-main > button >div:first-child{
         display: none;
     }
-    .rows-main > div >div:nth-child(2) > p{
+    .rows-main > button >div:nth-child(2) > p{
         padding: 0px 5px;
     }
 }
