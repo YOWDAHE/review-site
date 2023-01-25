@@ -197,27 +197,103 @@ main{
 .right-side-main >div >div{
     padding: 15px 30px;
 }
-.circle-add{
-    height: 40px;
-    width: 40px;
-    background-color: rgba(69, 71, 70, 0.836);
-    position: fixed;
-    bottom: 50px;
-    right: 60px;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 0px 18px 6px rgba(0, 0, 0, 0.842);
-    font-size: 22px;
-    transition: .15s;
-}
-.circle-add:hover{
+
+.right-side-main >div >.comments{
+    padding: 0px 25px;
+    background-color: rgb(27, 27, 27);
+    border: inherit;
     cursor: pointer;
-    /* box-shadow: 0px 0px 18px -6px rgba(223, 221, 221, 0.842); */
-    box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.842);
-    background-color: rgba(110, 110, 110, 0.808);
-    height: 42px;
-    width: 42px;
-    border-radius: 30px;
+    color: rgb(47, 211, 148);
+}
+.right-side-main >div >.comments>p{
+    padding: 0px;
+}
+.burger, .btn-berger{
+    background-color: transparent;
+    margin-right: 20px;
+    order: 3;
+    border: none;
+    width: 20px;
+    display: none;
+}
+.chk{
+    position: absolute;
+    right: 10px;
+    top: -5px;
+    width: 20px;
+    height: 50px;
+    display: none;
+}
+
+@media screen and (max-width:600px){
+    main{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .left-side-main{
+        position: static;
+        width: 100%;
+        border-radius: 0;
+
+    }
+    .right-side-main > div{
+        border-radius: 10px;
+    }
+    .header{
+        display: none;
+    }
+    .topNav{
+        height: 50px;
+    }
+    .search-top > input{
+        margin-top: 100px;
+        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.822);
+        display: none;
+    }
+    .links{
+        position: absolute;
+        top: -150px;
+        right: -100px;
+        align-items: flex-end;
+        display: flex;
+        flex-direction: column;
+        margin-top: 200px;
+        margin-right: 5px;
+        /* background-color: rgba(0, 0, 0, 0.774); */
+        background: #1b1b1bfb;
+        padding: 20px 10px;
+        /* box-sizing: border-box; */
+        /* display: none; */
+    }
+    .links > a {
+        box-sizing: border-box;
+        padding: 10px;
+        margin: 5px 0px;
+        text-align: center;
+        padding-right: 10px;
+        width: 100%;
+    }
+    .links > a:hover{
+        background-color: rgb(49, 49, 49);
+        border: solid 1px rgb(219, 219, 219);
+        border-width: 0px 1px;
+    }
+    .links >.user-top{
+        background-color: transparent;
+        width: 100%;
+        text-align: center;
+        border-radius: 0;
+        color: white;
+    }
+    .btn-berger, .burger{
+        display: inline-block;
+    }
+    .chk{
+        display: inline-block;
+        opacity: 0;
+    }
+    .chk:checked ~ .links{
+        right: -10px;
+    }
 }
