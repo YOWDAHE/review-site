@@ -142,7 +142,7 @@ nav{
     margin-top: 15px;
 }
 .rows-main > *{
-    transition: box-shadow 200ms ease-out;
+    transition: box-shadow 800ms cubic-bezier(0,1,0,1);
     width: 276px;
     height: 137px;
     margin: 0px 15px 15px 0px;
@@ -283,7 +283,8 @@ nav{
     height: 70px;
     background-color: black;
 }
-@media (max-width:600px){
+@media (max-width:1000px){
+    
     .header{
         display: none;
     }
@@ -338,7 +339,7 @@ nav{
         opacity: 0;
     }
     .chk:checked ~ .links{
-        right: -10px;
+        right: -5px;
     }
     .top-row-main, .rows-main{
         width: 100%;
@@ -355,7 +356,8 @@ nav{
         border-radius: 0px;
     }
     .rows-main > a >div:first-child{
-        display: none;
+        flex: .75 3;
+        /* display: none; */
     }
     .rows-main > a >div:nth-child(2) > p{
         padding: 0px 5px;
