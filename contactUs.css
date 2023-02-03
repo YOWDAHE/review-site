@@ -1,0 +1,121 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* height: 100vh;
+    width: 100vw; */
+
+    background-color: rgba(0, 0, 0, 0.945);
+    /* background-color: #222222; */
+    /* background-image: url(resources/images/sun.jfif); */
+    /* background-blend-mode: hard-light; */
+    background-attachment: fixed;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.header{
+    text-align: center;
+
+    font-family:'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    /* identical to box height */
+    letter-spacing: 1.36em;
+
+    color: #e4e4e4;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+nav{
+    position: sticky;
+    top: 0;
+}
+.topNav{
+    width: 100%;
+    height: 50px;
+    background: #272727;
+    box-shadow: 0px 11px 34px 5px rgba(0, 0, 0, 0.795);
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    margin-top: 10px;
+    border-radius: 10px;
+    transition: 1000ms;
+}
+.logo-srch{
+    display: flex;
+    align-items: center;
+}
+.icon > img{
+    padding: 5px 0px 0px 25px;
+    height: 80%;
+    justify-self: start;
+}
+
+.links{
+    color: rgba(255, 255, 255, 0.712);
+    margin-right: 25px;
+    transition: .5s;
+}
+.links > *{
+    margin: 0px 10px;
+}
+.links a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.781);
+}
+.links > .user-top{
+    display: inline-block;
+    border: none;
+    text-align: center;
+    color: #000000;
+    width: 60px;
+    background: #45E2BD;
+    border-radius: 48px;
+}
+
+.burger, .btn-berger{
+    background-color: transparent;
+    margin-right: 20px;
+    order: 3;
+    border: none;
+    width: 20px;
+    display: none;
+}
+.chk{
+    position: absolute;
+    right: 10px;
+    top: -5px;
+    width: 20px;
+    height: 50px;
+    display: none;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+main > div{
+    padding: 10px;
+    margin: 10px;
+    margin-top: 50px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #000000;
+    height: 400px;
+    color: rgba(255, 255, 255, 0.719);
+}
+main>div img{
+    width: 95%;
+    border-radius: 20px;
+}
