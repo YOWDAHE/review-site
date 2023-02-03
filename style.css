@@ -39,13 +39,15 @@ nav{
 .topNav{
     height: 50px;
     /* background: #272727; */
-    background: linear-gradient(to right, rgb(5, 4, 20) 0%, rgb(39, 5, 5) 71%, rgb(12, 6, 24) 100%);;
+    background: linear-gradient(to right, rgb(5, 4, 20) 0%, rgb(39, 5, 5) 71%, rgb(12, 6, 24) 100%);
     box-shadow: 0px 11px 34px 5px rgba(0, 0, 0, 0.795);
     /* position: relative; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 2;
+    border: 1px  solid rgba(0, 0, 0, 0.562);
+    border-width: 0px 0px 1px 0px;
 }
 .logo-srch{
     display: flex;
@@ -63,16 +65,16 @@ nav{
     margin-left: 30px;
 }
 .search-top > input{
-    background: #D9D9D9;
+    background: #6b5e5e;
     box-shadow: inset 9px 9px 8px rgba(0, 0, 0, 0.47);
     border: none;
     border-radius: 11px;
 }
-
 .filter > select{
+    border: none;
     text-align: center;
     width: 130px;
-    background: #434444;
+    background: #242222;
     border-radius: 48px;
 
 }
@@ -161,7 +163,7 @@ nav{
     width: 276px;
     height: 137px;
     margin: 0px 15px 15px 0px;
-    border: 1px solid rgba(255, 255, 255, 0.082);
+    border: 1px solid rgba(255, 255, 255, 0);
     /* background: #262626; */
     background-color: #00000096;
     /* box-shadow: 16px 17px 18px -6px rgba(0, 0, 0, 0.52), inset 0px 0px 30px 21px rgba(0, 0, 0, 0.116); */
