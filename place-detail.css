@@ -179,7 +179,7 @@ main{
 }
 
 .content > a:hover{
-    background-color: rgb(46, 46, 46);
+    background-color: rgb(14, 14, 14);
     border: 0px solid white;
     border-width: 0px 1px 0px 1px;
     padding-left: 30px;
@@ -188,7 +188,7 @@ main{
     background: #111111;    
 }
 .right-side-main > div{
-    background: #262626;
+    /* background: #262626; */
     box-shadow: 16px 17px 18px -6px rgba(0, 0, 0, 0.52);
     border-radius: 25px;
     color: rgb(180, 180, 180);   
@@ -203,10 +203,12 @@ main{
 .right-side-main >div >div{
     padding: 15px 30px;
 }
-
+.right-side-main >div >div:nth-child(2){
+    background-color: rgba(0, 0, 0, 0.349);
+}
 .right-side-main >div >.comments{
     padding: 0px 25px;
-    background-color: rgb(27, 27, 27);
+    background-color: rgba(0, 0, 0, 0.164);
     border: inherit;
     cursor: pointer;
     color: rgb(47, 211, 148);

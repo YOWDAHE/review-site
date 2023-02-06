@@ -106,7 +106,7 @@ nav{
     flex-wrap: wrap;
     /* justify-content: center; */
     align-items: center;
-    background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.24));
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.13));
     transition: background 1.5s ease;
 }
 .top-row-main > *{
@@ -217,14 +217,14 @@ nav{
 /* sample end */
 
 .top-row-main:hover{
-    background-color: #0f0101cc;
+    background-color: #0f0101dc;
 }
 .rows-main > a:hover{
    cursor: pointer; 
    outline-offset: 5px ;
    outline: solid 1px rgba(255, 255, 255, 0.61);
    box-shadow: 0px 0px 40px -5px rgba(226, 223, 223, 0.349), inset 0px 0px 30px 21px rgba(0, 0, 0, 0.116);
-   padding: 0px;
+   /* padding: 0px; */
 }
 .rows-main > a >*{
     flex: 1;
