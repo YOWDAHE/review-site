@@ -2,7 +2,7 @@ body{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    height: 100%;
+    height: 100vh;
     width: 100%;
 
     /* background-color: #db89896e; */
@@ -115,7 +115,14 @@ nav{
 
 
 /* main */
-
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.644);
+    width: 100%;
+}
 .main-top{
     display: flex;
     padding: 20px;
@@ -131,9 +138,22 @@ nav{
     flex: 1;
 }
 .main-top-right > p{
-    margin-top: 50px;
+    margin-top: 30px;
     letter-spacing: 2px;
 }
 .video > video{
     border-radius: 20px;
+}
+.main-bottom{
+    display: flex;
+}
+.main-bottom-left{
+    margin-left: 50px;
+    flex: 1;
+}
+.main-bottom-right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

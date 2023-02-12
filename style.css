@@ -65,16 +65,16 @@ nav{
     margin-left: 30px;
 }
 .search-top > input{
-    background: #6b5e5e;
+    background: #d3b9b9;
     box-shadow: inset 9px 9px 8px rgba(0, 0, 0, 0.47);
     border: none;
-    border-radius: 11px;
+    border-radius: 5px;
 }
 .filter > select{
     border: none;
     text-align: center;
     width: 130px;
-    background: #242222;
+    background: #06966b;
     border-radius: 48px;
 
 }
