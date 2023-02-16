@@ -1,0 +1,69 @@
+body{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+.background{
+    background: linear-gradient(to bottom right, rgb(9, 8, 39) 0%, rgb(66, 9, 9) 71%);
+    height: 100vh;
+}
+main{
+    box-sizing: border-box;
+    padding: 30px;
+    padding-top: 50px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.404);
+    height: 60%;
+    width: 30%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin:auto;
+    border-radius: 15px;
+    border: solid 1px rgba(255, 255, 255, 0.089);
+    outline: solid 1px rgba(255, 255, 255, 0.329);
+    outline-offset: 7px;
+    color: rgba(255, 255, 255, 0.404);
+}
+main  p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+main form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main form :nth-child(2), main form :nth-child(3){
+    margin-top: 30px;
+}
+main form :nth-child(4){
+    background-color: rgba(33, 221, 180, 0.116);
+    border: solid 1px rgba(255, 255, 255, 0.144);
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    border-radius: 5px;
+    width: 80px;
+    margin-top: 20px;
+}
+main form :nth-child(5){
+    text-decoration: none;
+    margin-top: 10px;
+    color: rgba(0, 255, 255, 0.377);
+}
+main form input{
+    height: 30px;
+    width: 200px;
+    background-color: transparent;
+    border: solid 1px rgba(255, 255, 255, 0.144);
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.404);
+    padding: 0px 15px;
+}
+main form input::placeholder{
+    text-align: center;
+}
