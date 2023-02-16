@@ -71,7 +71,7 @@ nav{
     border: none;
     text-align: center;
     width: 130px;
-    background: #06966b;
+    background: #0dfcb4d7;
     border-radius: 48px;
 
 }
@@ -135,6 +135,9 @@ nav{
 }
 .top-row-main > a:nth-child(1) > div:nth-child(2){
     padding-left: 30px;
+}
+.sample-image{
+    background-image: url(./resources/images/blue\ place.png);
 }
 .feature{
     font-size: 30px;

@@ -90,7 +90,7 @@ nav{
     padding: 10px 0px 0px 30px;
     display: flex;
     justify-content: center;
-    margin-left: -270px;
+    margin-left: -180px; 
 }
 .main-container .map{
     border-radius: 20px;
@@ -117,6 +117,9 @@ nav{
     margin-top: 5px;
     margin-bottom: 7px;
 }
+.subbtn{
+    background-color: rgb(47, 255, 158);
+}
 .burger, .btn-berger{
     background-color: transparent;
     margin-right: 20px;
@@ -132,4 +135,66 @@ nav{
     width: 20px;
     height: 50px;
     display: none;
+}
+
+@media (max-width: 1000px){
+    .header{
+        display: none;
+    }
+    .topNav{
+        height: 50px;
+    }
+    .links{
+        position: absolute;
+        top: -150px;
+        right: -100px;
+        align-items: flex-end;
+        display: flex;
+        flex-direction: column;
+        margin-top: 200px;
+        margin-right: 5px;
+        /* background-color: rgba(0, 0, 0, 0.774); */
+        background: #1b1b1bfb;
+        padding: 20px 10px;
+        /* box-sizing: border-box; */
+        /* display: none; */
+    }
+    .links > a {
+        box-sizing: border-box;
+        padding: 10px;
+        margin: 5px 0px;
+        text-align: center;
+        padding-right: 10px;
+        width: 100%;
+    }
+    .links > a:hover{
+        background-color: rgb(49, 49, 49);
+        border: solid 1px rgb(219, 219, 219);
+        border-width: 0px 1px;
+    }
+    .links >.user-top{
+        background-color: transparent;
+        width: 100%;
+        text-align: center;
+        border-radius: 0;
+        color: white;
+    }
+    .btn-berger, .burger{
+        display: inline-block;
+    }
+    .chk{
+        display: inline-block;
+        opacity: 0;
+    }
+    .chk:checked ~ .links{
+        right: -10px;
+    }
+    .main-container{
+        flex-direction: column;
+        margin: 0;
+    }
+    .map{
+        padding: 0;
+        margin-right: 20px;
+    }
 }

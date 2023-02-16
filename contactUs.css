@@ -119,3 +119,13 @@ main>div img{
     width: 95%;
     border-radius: 20px;
 }
+
+
+@media (max-width: 600px){
+    .header{
+        display: none;
+    }
+    main{
+        flex-direction: column;
+    }
+}

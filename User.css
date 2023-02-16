@@ -3,8 +3,8 @@ body{
     padding: 0px;
     box-sizing: border-box;
 
-    /* background-color: #db89896e; */
-    background-color: rgba(0, 0, 0, 0.945);    /* background-attachment: fixed; */
+    /* background-color: rgba(0, 0, 0, 0.973); */
+    background: linear-gradient(to bottom right, rgb(9, 8, 39) 0%, rgb(66, 9, 9) 71%, rgb(22, 10, 43) 100%);
     display: flex;
     flex-direction: column;
 }
@@ -30,16 +30,17 @@ nav{
 .topNav{
     height: 50px;
     background: #272727;
-    box-shadow: 0px 11px 34px 5px rgba(0, 0, 0, 0.795);
-    /* position: relative; */
+    /* box-shadow: 0px 11px 34px 5px rgba(0, 0, 0, 0.795); */
+    background: linear-gradient(to right, rgb(5, 4, 20) 0%, rgb(39, 5, 5) 71%, rgb(12, 6, 24) 100%);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* z-index: 12; */
 }
 
-.topNav > .links{
+/* .topNav > .links{
     z-index: 100;
-}
+} */
 .logo-srch{
     display: flex;
     align-items: center;
@@ -86,8 +87,8 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    z-index: -1;
+    /* position: relative; */
+    /* z-index: -1; */
 }
 .pictures{
     margin-top: 30px;
@@ -120,20 +121,22 @@ main{
 }
 
 .back{
-    width: 1004px;
-    height: 650px;
-    position: absolute;
+    /* width: 1004px;
+    height: 650px; */
+    /* position: absolute; */
     top: 100px;
-    z-index: -2;
+    /* z-index: -2; */
     background: #000000;
     box-shadow: 16px 17px 18px -6px rgba(0, 0, 0, 0.52);
     border-radius: 25px;
-}
+    margin-top: 20px;
+    }
 
 .back-main{
-    padding: 200px 45px 0px 45px;
+    padding: 20px 45px 0px 45px;
     /* background-color: white; */
     display: flex;
+
 }
 
 .info-back{
@@ -209,6 +212,9 @@ main{
 @media screen and (max-width: 1000px){
     .topNav{
         height: 50px;
+        position: fixed;
+        width: 100%;
+        top: 0;
     }
     .search-top > input{
         margin-top: 100px;
@@ -265,21 +271,28 @@ main{
     }
     .pictures{
         position: relative;
+        z-index: -1;
     }
     .main-picture{
         position: absolute;
         width: 30%;
         height: 50%;
         bottom: 5px;
-        left: 5px;
+        left: 10px;
         border: solid 1px black;
         box-shadow: 16px 17px 18px -6px rgba(0, 0, 0, 0.897);
+        margin: 0;
+    }
+    .second-picture{
+        border-radius: 0;
+        width: 100%;
+        margin: 0;
     }
     .back{
         background-color: transparent;
         width: 100%;
         padding: 0;
-        margin-top: 200px;
+        margin-top: 20px;
         border-radius: 0px;
     }
     .back-main{
@@ -301,5 +314,9 @@ main{
     }
     .info-back > h4, .info-back > a:first-child, .info-back > .info-back-button{
         border-radius: 0px;
+    }
+    .about-back > section> textarea{
+        background-color: rgba(0, 0, 0, 0.911);
+        color: white;
     }
 }

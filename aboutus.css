@@ -6,9 +6,6 @@ body{
     width: 100vw; */
 
     background-color: rgba(0, 0, 0, 0.945);
-    /* background-color: #222222; */
-    /* background-image: url(resources/images/sun.jfif); */
-    /* background-blend-mode: hard-light; */
     background-attachment: fixed;
     display: flex;
     /* justify-content: center; */
@@ -121,4 +118,24 @@ main>.mainContainer>div{
 }
 main>.mainContainer div p{
     text-align: justify;
+}
+
+@media (max-width: 1000px){
+    .header{
+        display: none;
+    }
+
+    main .logo{
+        font-size: 11px;
+    }
+    .mainContainer{
+        flex-direction: column;
+        width: 100%;
+    }
+    main>.mainContainer>div{
+        box-sizing: border-box;
+        width: 100%;
+        /* padding: 0; */
+        margin: 10px 0px;
+    }
 }
