@@ -5,16 +5,13 @@ body{
     /* height: 100vh;
     width: 100vw; */
 
-    background-color: rgb(17, 16, 16);
-    /* background-color: #180a01e3; */
-    /* background: rgb(2,0,39); */
+    /* background-color: rgb(17, 16, 16); */
     background: linear-gradient(to bottom right, rgb(9, 8, 39) 0%, rgb(66, 9, 9) 71%, rgb(22, 10, 43) 100%);
-    /* background-image: url(resources/images/sun.jfif); */
-    /* background-blend-mode: hard-light; */
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+    /* animation: bgChange 5s infinite; */
 }
 
 .header{
@@ -238,9 +235,6 @@ nav{
     background-size: cover;
     background-position: center;
 }
-.caffe-image{
-    /* background-image: url(./resources/images/wallhaven-6oz76x.png); */
-}
 .sample-caffe,.sample-caffe2{
     /* color: white;
     padding: 15px 15px 0px 15px;
@@ -311,7 +305,21 @@ nav{
     height: 70px;
     background-color: black;
 }
-@media (max-width:1000px){
+@keyframes bgChange {
+    0%{
+        background: linear-gradient(to bottom right, rgb(9, 8, 39) 0%, rgb(66, 9, 9) 71%, rgb(22, 10, 43) 100%);
+        /* background-color: red; */
+    }
+    50%{
+        background: linear-gradient(to bottom right, rgb(9, 8, 39) 0%, rgb(66, 9, 9) 41%, rgb(22, 10, 43) 100%);
+        /* background-color: black; */
+    }
+    100%{
+        background: linear-gradient(to bottom right, rgb(9, 8, 39) 0%, rgb(66, 9, 9) 71%, rgb(22, 10, 43) 100%);
+        /* background-color: red; */
+    }
+}
+@media (max-width:1000px){  
     
     .header{
         display: none;
@@ -378,10 +386,23 @@ nav{
         margin: -23px 0px;
         margin-top: 27px;
         width: 100%;
-        height: 113px;
-        background: #262626;
-        box-shadow: 16px 17px 18px -6px rgba(0, 0, 0, 0.52), inset 0px 0px 30px 21px rgba(0, 0, 0, 0.192);
         border-radius: 0px;
+
+        height: 137px;
+        margin: 0px 15px 15px 0px;
+        border: 1px solid rgba(255, 255, 255, 0);
+    }
+    .top-row-main > a{
+        margin-top: 50px;
+        padding: 0px;
+    }
+    .top-row-main> a > .image-toppick{
+        padding: 0px;
+        width: 100px;
+        
+    }
+    .sample-caffe > p {
+        display: none;
     }
     .rows-main > a >div:first-child{
         flex: .75 3;

@@ -185,6 +185,7 @@ main{
     width: 250px;
     position: relative;
     margin-left: -30px;
+    /* z-index: -1; */
 }
 .right-side-main > div {
     display: flex;
@@ -202,6 +203,7 @@ main{
     border-radius: 25px;
 }
 .rsm-popup{
+    z-index: 1;
     display: flex;
     width: 100px;
     height: 100px;
@@ -211,7 +213,8 @@ main{
     bottom: 10%;
     right: 0%;
     /* display: none; */
-    pointer-events: none;
+    opacity: 0;
+    /* pointer-events: none; */
 }
 .rsm-popup > .content{
     font-size: 12px;
@@ -220,7 +223,8 @@ main{
     padding: 3px 10px;
 }
 .rsm-popup:hover{
-    pointer-events: visible;
+    opacity: 10;
+    /* pointer-events: auto; */
 }
 
 
