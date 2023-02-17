@@ -116,7 +116,7 @@ main > div{
     color: rgba(255, 255, 255, 0.719);
 }
 main>div img{
-    width: 95%;
+    height: 200px;
     border-radius: 20px;
 }
 
